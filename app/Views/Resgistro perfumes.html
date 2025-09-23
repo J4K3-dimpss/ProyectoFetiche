@@ -1,0 +1,125 @@
+<body> 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina Resgistro de Perfumes </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+<img src="./img/logofetiche.png" width="300" height="auto"> <button type="button" class="btn btn-primary"
+  style="
+      background-color: black;
+        color: white;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+    position: relative;
+    left: 1000px;     /* Mueve el botón hacia la derecha */
+    top: 1px;     /* Mueve el botón hacia arriba */
+  ">
+  Cerrar sesión
+</button>
+
+<!-- Barra horizontal roja -->
+<div style="background-color: crimson; height: 80px; width: 120%;  display: flex; align-items: center; padding-left: 1rem;">
+  <span style="color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;">Bienvenido a Registro Perfumes</span>
+</div>
+
+<!-- Contenedor principal que alinea menú y contenido -->
+<div style="display: flex; height: calc(100vh - 80px);">
+
+  <!-- Menú lateral rojo -->
+  <div style="background-color: crimson; width: 200px; height: 1100px; padding: 1rem; color: white;">
+
+    <!-- Ícono circular -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <div style="width: 60px; height: 60px; background-color: lightgray; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 2rem; color: black;">👤</span>
+      </div>
+    </div>
+
+    <!-- Menú vertical -->
+    <nav>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">🏠 Inicio</a></li>
+        <li><a href="inventario.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📃 Inventario</a></li>
+        <li><a href="index.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">✏️ Creación</a></li>
+        <li><a href="Registro de usuarios.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">👥 Usuarios</a></li>
+        <li><a href="historial_de_compras.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">🛍 Ordenes</a></li>
+        <li><a href="categorias.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📑 Categoría</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Área blanca de contenido -->
+  <div style="flex-grow: 1; background-color: white; padding: 2rem;">
+    
+    <!-- 🔴 Cuadro rojo claro -->
+    <div style="
+      background-color: #ffcccc;
+      height: 40px;
+      width: 80%;
+      margin: 0 auto 2rem auto;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: crimson;
+    ">
+    Lista de Producto
+      </div>
+  
+    <div>
+      <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; background-color: crimson;">
+  + Registrar Producto
+</button>
+    </div>
+<div class="container-md">
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Nombre</label><br>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+</div><br>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Marca</label><br>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+</div><br>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Tamaño</label><br>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+</div><br>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Cantidad</label><br>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+</div><br>
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Precio </Q></label><br>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+</div><br>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Descripcion de fragancia</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div><br>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+  <label class="form-check-label" for="checkChecked">
+    Disponible
+  </label><br>
+</div>
+<button type="button" class="btn btn-primary btn-sm">Guardar </button>
+<button type="button" class="btn btn-secondary btn-sm">Cancelar</button>
+</div><br>
+    </div>
+
+  </div>
+
+
+</div>
+ 
