@@ -11,7 +11,7 @@ use CodeIgniter\Controller;
             return view('Registro de usuarios',$datosBD);
         }
  
-        public function guardarMunicipio(){
+        public function guardarClientes(){
             $codigo = $this->request->getVar('txt_codigo');
             $nombre = $this->request->getVar('txt_nombre');
             $cod_depto = $this->request->getVar('txt_cod_depto');
