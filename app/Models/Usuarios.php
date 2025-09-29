@@ -7,4 +7,4 @@ use CodeIgniter\Model;
         protected $primaryKey = 'id_usuario';
         protected $allowedFields = ['id_usuario','nombre_usuario','contraseña','rol'];
     }
-?>v
+?>

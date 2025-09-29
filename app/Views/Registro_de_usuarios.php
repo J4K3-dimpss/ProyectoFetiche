@@ -9,6 +9,13 @@
 <div class="container mt-4">
     <h2 class="mb-4">Usuarios registrados</h2>
 
+           <!-- 🔘 Botón arriba del buscador -->
+    <div class="d-flex justify-content-end mb-3">
+        <a href="#" class="btn btn-success btn-sm">
+            + Agregar nuevo usuario
+        </a>
+    </div>
+
     <?php if (!empty($usuarios)): ?>
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
