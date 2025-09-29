@@ -12,3 +12,5 @@ $routes->get('generos', 'generoController::verGeneros');
 $routes->get('clientes', 'clientesController::verClientes');
 $routes->get('usuarios', 'usuariosController::verUsuarios');
 $routes->get('ventas', 'ventasController::verVentas');
+$routes->get('perfumes/nuevo', 'perfumesController::formularioNuevo');
+$routes->post('perfumes/guardar', 'perfumesController::guardarPerfume');

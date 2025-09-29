@@ -8,12 +8,13 @@
 <body>
 <div class="container mt-4">
     <h2 class="mb-4">Perfumes registrados</h2>
-        <!-- 🔘 Botón arriba del buscador -->
+    <!-- 🔘 Botón para agregar nuevo perfume -->
     <div class="d-flex justify-content-end mb-3">
-        <a href="#" class="btn btn-success btn-sm">
+        <a href="<?= base_url('perfumes/nuevo') ?>" class="btn btn-success btn-sm">
             + Agregar nuevo perfume
         </a>
     </div>
+
     <!-- 🔘 Botón de impresión -->
 <div class="d-flex justify-content-end mb-3">
     <button class="btn btn-dark btn-sm" onclick="window.print()">

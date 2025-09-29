@@ -19,6 +19,13 @@ class perfumesController extends BaseController {
         return view('Registro_de_perfumes', $datosBD);
     }
 
+    public function formularioNuevo() {
+    $genero = new Generos();
+    $datos['generos'] = $genero->findAll(); // Para llenar el select de género
+    return view('Formulario_perfume', $datos);
+}
+
+
     // Guardar nuevo perfume
     public function guardarPerfume() {
         $id = $this->request->getVar('txt_id');
