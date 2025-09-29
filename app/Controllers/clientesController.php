@@ -10,7 +10,7 @@ class ControladorClientes extends BaseController {
     public function verClientes() {
         $cliente = new Clientes();
         $datosBD['datosBD'] = $cliente->findAll();
-        return view('Registro_de_usuarios', $datosBD);
+        return view('Registro_de_clientes', $datosBD);
     }
 
     // Guardar nuevo cliente
