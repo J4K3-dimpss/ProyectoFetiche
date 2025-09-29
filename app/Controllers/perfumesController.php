@@ -5,7 +5,7 @@ use App\Models\Perfumes;
 use App\Models\Generos;
 use CodeIgniter\Controller;
 
-class ControladorPerfumes extends BaseController {
+class perfumesController extends BaseController {
 
     // Mostrar todos los perfumes
     public function verPerfumes() {
