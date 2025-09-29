@@ -5,12 +5,12 @@ use App\Models\Ventas;
 use App\Models\Clientes;
 use CodeIgniter\Controller;
 
-class ControladorVentas extends BaseController {
+class ventasController extends BaseController {
 
     // Mostrar todas las ventas
     public function verVentas() {
         $venta = new Ventas();
-        $datosBD['datosBD'] = $venta->findAll();
+        $datosBD['ventas'] = $venta->findAll();
 
         // También puedes cargar los clientes para mostrar nombres en vez de IDs
         $cliente = new Clientes();

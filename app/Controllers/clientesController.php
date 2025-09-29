@@ -4,12 +4,12 @@ namespace App\Controllers;
 use App\Models\Clientes;
 use CodeIgniter\Controller;
 
-class ControladorClientes extends BaseController {
+class clientesController extends BaseController {
 
     // Mostrar todos los clientes
     public function verClientes() {
         $cliente = new Clientes();
-        $datosBD['datosBD'] = $cliente->findAll();
+        $datosBD['clientes'] = $cliente->findAll();
         return view('Registro_de_clientes', $datosBD);
     }
 

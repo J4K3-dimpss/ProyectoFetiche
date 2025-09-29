@@ -4,12 +4,12 @@ namespace App\Controllers;
 use App\Models\Usuarios;
 use CodeIgniter\Controller;
 
-class ControladorUsuarios extends BaseController {
+class usuariosController extends BaseController {
 
     // Mostrar todos los usuarios
     public function verUsuarios() {
         $usuario = new Usuarios();
-        $datosBD['datosBD'] = $usuario->findAll();
+        $datosBD['usuarios'] = $usuario->findAll();
         return view('Registro_de_usuarios', $datosBD);
     }
 

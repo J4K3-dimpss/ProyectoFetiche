@@ -9,7 +9,7 @@ class generoController extends BaseController {
     // Mostrar todos los géneros
     public function verGeneros() {
         $genero = new Generos();
-        $datosBD['datosBD'] = $genero->findAll();
+        $datosBD['generos'] = $genero->findAll();
         return view('Registro_de_generos', $datosBD);
     }
 
