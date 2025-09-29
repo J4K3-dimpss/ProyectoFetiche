@@ -4,7 +4,7 @@ namespace App\Controllers;
 use App\Models\Generos;
 use CodeIgniter\Controller;
 
-class ControladorGeneros extends BaseController {
+class generoController extends BaseController {
 
     // Mostrar todos los géneros
     public function verGeneros() {

@@ -10,7 +10,7 @@ class perfumesController extends BaseController {
     // Mostrar todos los perfumes
     public function verPerfumes() {
         $perfume = new Perfumes();
-        $datosBD['datosBD'] = $perfume->findAll();
+        $datosBD['perfumes'] = $perfume->findAll();
 
         // También puedes cargar los géneros si quieres mostrar el nombre en vez del ID
         $genero = new Generos();
