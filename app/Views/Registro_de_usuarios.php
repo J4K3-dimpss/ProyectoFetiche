@@ -6,6 +6,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <img src="<?= base_url('img/fetichelogo.png') ?>" width="150" height="auto"><a href="<?= base_url('logout') ?>" class="btn btn-primary"
+  style="
+    background-color: black;
+    color: white;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .8rem;
+    --bs-btn-font-size: .75rem;
+    position: relative;
+    left: 1230px;
+    top: 1px;
+  ">
+  Cerrar sesión
+</a>
+</button>
 
 <!-- Barra horizontal roja -->
 <div style="background-color: crimson; height: 80px; width: 120%;  display: flex; align-items: center; padding-left: 1rem;">
@@ -42,7 +56,7 @@
 
            <!-- 🔘 Botón arriba del buscador -->
     <div class="d-flex justify-content-end mb-3">
-        <a href="#" class="btn btn-success btn-sm">
+        <a href="<?= base_url('usuarios/agregar') ?>" class="btn btn-success btn-sm">
             + Agregar nuevo usuario
         </a>
     </div>

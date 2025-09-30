@@ -43,16 +43,18 @@ class ventasController extends BaseController {
     }
 
     // Localizar venta para editar
-    public function localizarVenta($id = null) {
-        $venta = new Ventas();
-        $datosVenta['datosVenta'] = $venta->where('id_venta', $id)->first();
+public function localizarVenta($id = null) {
+    $ventaModel = new Ventas();
+    $clienteModel = new Clientes();
 
-        // Cargar clientes para el <select>
-        $cliente = new Clientes();
-        $datosVenta['clientes'] = $cliente->findAll();
+    $venta = $ventaModel->where('id_venta', $id)->first();
+    $clientes = $clienteModel->findAll();
 
-        return view('frm_actualizarVenta', $datosVenta);
-    }
+    return view('frm_actualizarVenta', [
+        'venta' => $venta,
+        'clientes' => $clientes
+    ]);
+}
 
     // Modificar venta
     public function modificarVenta() {
@@ -68,4 +70,18 @@ class ventasController extends BaseController {
         $venta->update($id, $datos);
         return $this->verVentas();
     }
+    public function buscarVenta() {
+    $query = $this->request->getGet('query');
+
+    $venta = new Ventas();
+    $datosBD['ventas'] = $venta
+        ->like('fecha_venta', $query)
+        ->orLike('id_cliente', $query) // si usas nombres, deberías hacer join con clientes
+        ->findAll();
+
+    $cliente = new Clientes();
+    $datosBD['clientes'] = $cliente->findAll();
+
+    return view('Registro_de_ventas', $datosBD);
+}
 }

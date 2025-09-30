@@ -18,21 +18,19 @@ class LoginController extends BaseController
         $usuarioModel = new UsuarioModel();
         $usuario = $usuarioModel->where('nombre_usuario', $correo)->first();
 
-        if ($usuario && $usuario['contraseña'] === $password) {
+if ($usuario && $usuario['contraseña'] === $password) {
     session()->set([
         'usuario' => $usuario['nombre_usuario'],
         'rol' => $usuario['rol']
     ]);
     return redirect()->to('perfumes');
-
-        }
+} else {
+    return redirect()->to('login')->with('mensaje', 'Credenciales incorrectas');
+}
     }
-    public function logout()
+public function logout()
 {
     session()->destroy();
     return redirect()->to('login');
-    if (!session()->get('usuario')) {
-    return redirect()->to('login');
-}
 }
 }

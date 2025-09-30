@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Usuario</title>
+    <title>Editar Venta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <style>
@@ -37,30 +37,31 @@
 <body>
 
 <div class="form-box">
-    <h2>✏️ Editar usuario</h2>
-    <form action="<?= base_url('usuarios/modificar') ?>" method="post">
-        <input type="hidden" name="txt_id" value="<?= $datosUsuario['id_usuario'] ?>">
+    <h2>✏️ Editar venta</h2>
+    <form action="<?= base_url('ventas/modificar') ?>" method="post">
+        <input type="hidden" name="txt_id" value="<?= $venta['id_venta'] ?>">
 
         <div class="mb-3">
-            <label for="txt_nombre" class="form-label">📧 Correo electrónico</label>
-            <input type="email" name="txt_nombre" class="form-control" value="<?= $datosUsuario['nombre_usuario'] ?>" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="txt_contraseña" class="form-label">🔒 Nueva contraseña <small class="text-muted">(opcional)</small></label>
-            <input type="password" name="txt_contraseña" class="form-control" placeholder="Dejar vacío para no cambiar">
-        </div>
-
-        <div class="mb-3">
-            <label for="txt_rol" class="form-label">👤 Rol</label>
-            <select name="txt_rol" class="form-select" required>
-                <option value="admin" <?= $datosUsuario['rol'] === 'admin' ? 'selected' : '' ?>>Administrador</option>
-                <option value="vendedor" <?= $datosUsuario['rol'] === 'vendedor' ? 'selected' : '' ?>>Vendedor</option>
+            <label for="txt_id_cliente" class="form-label">👤 Cliente</label>
+            <select name="txt_id_cliente" class="form-select" required>
+                <option value="">Selecciona un cliente</option>
+                <?php foreach ($clientes as $c): ?>
+                    <option value="<?= $c['id_cliente'] ?>"
+                        <?= $c['id_cliente'] == $venta['id_cliente'] ? 'selected' : '' ?>>
+                        <?= $c['nombre_cliente'] ?>
+                    </option>
+                <?php endforeach; ?>
             </select>
         </div>
 
+        <div class="mb-3">
+            <label for="txt_fecha" class="form-label">📅 Fecha de venta</label>
+            <input type="date" name="txt_fecha" class="form-control"
+                   value="<?= $venta['fecha_venta'] ?>" required>
+        </div>
+
         <div class="d-flex justify-content-between mt-4">
-            <a href="<?= base_url('usuarios') ?>" class="btn btn-secondary btn-custom">Cancelar</a>
+            <a href="<?= base_url('ventas') ?>" class="btn btn-secondary btn-custom">Cancelar</a>
             <button type="submit" class="btn btn-warning btn-custom">💾 Actualizar</button>
         </div>
     </form>

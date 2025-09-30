@@ -309,3 +309,179 @@ DEBUG - 2025-09-30 02:18:07 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-09-30 02:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-09-30 02:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-09-30 02:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 02:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 02:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 02:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 02:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 02:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 02:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-30 03:00:11 --> ErrorException: Undefined array key "datosVenta"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 42.
+ 1 APPPATH\Views\frm_actualizarVenta.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "datosVenta"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(54): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-30 03:02:38 --> ErrorException: Undefined array key "datosVenta"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 42.
+ 1 APPPATH\Views\frm_actualizarVenta.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "datosVenta"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(54): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-30 03:04:50 --> ErrorException: Undefined array key "datosVenta"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 42.
+ 1 APPPATH\Views\frm_actualizarVenta.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "datosVenta"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(54): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-30 03:04:54 --> ErrorException: Undefined array key "datosVenta"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 42.
+ 1 APPPATH\Views\frm_actualizarVenta.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "datosVenta"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(54): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-30 03:10:23 --> ErrorException: Undefined array key "nombre_cliente"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 51.
+ 1 APPPATH\Views\frm_actualizarVenta.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_cliente"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(53): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-30 13:53:02 --> ErrorException: Undefined array key "nombre_cliente"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 51.
+ 1 APPPATH\Views\frm_actualizarVenta.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_cliente"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(53): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+DEBUG - 2025-09-30 13:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-30 13:53:47 --> ErrorException: Undefined array key "nombre_cliente"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 51.
+ 1 APPPATH\Views\frm_actualizarVenta.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_cliente"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(53): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+DEBUG - 2025-09-30 13:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 13:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-30 14:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-30 14:36:42 --> ErrorException: Undefined array key "nombre_cliente"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 51.
+ 1 APPPATH\Views\frm_actualizarVenta.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_cliente"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(53): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-30 14:51:35 --> ErrorException: Undefined array key "nombre_cliente"
+[Method: GET, Route: ventas/editar/1]
+in APPPATH\Views\frm_actualizarVenta.php on line 51.
+ 1 APPPATH\Views\frm_actualizarVenta.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_cliente"', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\frm_actualizarVenta.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('frm_actualizarVenta', [], true)
+ 5 APPPATH\Controllers\ventasController.php(53): view('frm_actualizarVenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ventasController->localizarVenta('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ventasController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')

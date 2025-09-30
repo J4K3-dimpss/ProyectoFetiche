@@ -15,14 +15,14 @@ class usuariosController extends BaseController {
 
     // Guardar nuevo usuario
     public function guardarUsuario() {
-        $id = $this->request->getVar('txt_id');
+
         $nombre = $this->request->getVar('txt_nombre');
         $contraseña = $this->request->getVar('txt_contraseña');
         $rol = $this->request->getVar('txt_rol');
 
         $usuario = new Usuarios();
         $datos = [
-            'id_usuario' => $id,
+
             'nombre_usuario' => $nombre,
             'contraseña' => password_hash($contraseña, PASSWORD_DEFAULT), // Seguridad
             'rol' => $rol
@@ -30,6 +30,10 @@ class usuariosController extends BaseController {
         $usuario->insert($datos);
         return $this->verUsuarios();
     }
+    // Formulario para agregar usuario
+    public function formularioAgregar() {
+    return view('Formulario_agregar_usuario');
+}
 
     // Eliminar usuario
     public function eliminarUsuario($id = null) {

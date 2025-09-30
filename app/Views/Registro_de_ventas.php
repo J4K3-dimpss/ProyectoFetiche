@@ -6,6 +6,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <img src="<?= base_url('img/fetichelogo.png') ?>" width="150" height="auto"><a href="<?= base_url('logout') ?>" class="btn btn-primary"
+  style="
+    background-color: black;
+    color: white;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .8rem;
+    --bs-btn-font-size: .75rem;
+    position: relative;
+    left: 1230px;
+    top: 1px;
+  ">
+  Cerrar sesión
+</a>
     <!-- Barra horizontal roja -->
 <div style="background-color: crimson; height: 80px; width: 120%;  display: flex; align-items: center; padding-left: 1rem;">
   <span style="color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;">Bienvenido a Historial de ordenes</span>
@@ -38,6 +51,15 @@
   </div>
 <div class="container mt-4">
     <h2 class="mb-4">Historial de ordenes</h2>
+    <form action="<?= base_url('ventas/buscar') ?>" method="get"
+      class="d-flex justify-content-center mb-4"
+      style="max-width: 500px; margin: auto;">
+  
+  <input type="text" name="query" class="form-control me-2"
+         placeholder="Buscar por ID o nombre..." required>
+  
+  <button type="submit" class="btn btn-primary">🔍 Buscar</button>
+</form>
 
     <?php if (!empty($ventas)): ?>
         <table class="table table-bordered table-striped">
