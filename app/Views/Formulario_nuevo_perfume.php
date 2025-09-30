@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Editar Perfume</title>
+  <title>Nuevo Perfume</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <style>
@@ -19,7 +19,7 @@
       box-shadow: 0 0 25px rgba(0,0,0,0.1);
     }
     h2 {
-      color: crimson;
+      color: #198754;
       font-weight: 700;
       text-align: center;
       margin-bottom: 30px;
@@ -48,44 +48,40 @@
 <body>
 
 <div class="form-container">
-  <h2>✏️ Editar Perfume</h2>
+  <h2>➕ Agregar nuevo perfume</h2>
 
-  <form action="<?= base_url('perfumes/modificar') ?>" method="post">
-    <input type="hidden" name="txt_id" value="<?= $perfume['id_perfume'] ?>">
-
+  <form action="<?= base_url('perfumes/guardar') ?>" method="post">
     <div class="mb-3">
-      <label for="nombre" class="form-label">Nombre:</label>
-      <input type="text" name="txt_nombre" id="nombre" class="form-control" value="<?= $perfume['nombre'] ?>" required>
+      <label class="form-label">Nombre:</label>
+      <input type="text" name="txt_nombre" class="form-control" required>
     </div>
 
     <div class="mb-3">
-      <label for="marca" class="form-label">Marca:</label>
-      <input type="text" name="txt_marca" id="marca" class="form-control" value="<?= $perfume['marca'] ?>">
+      <label class="form-label">Marca:</label>
+      <input type="text" name="txt_marca" class="form-control">
     </div>
 
     <div class="mb-3">
-      <label for="descripcion" class="form-label">Descripción:</label>
-      <textarea name="txt_descripcion" id="descripcion" class="form-control" rows="3"><?= $perfume['descripcion'] ?></textarea>
+      <label class="form-label">Descripción:</label>
+      <textarea name="txt_descripcion" class="form-control" rows="3"></textarea>
     </div>
 
     <div class="mb-3">
-      <label for="precio" class="form-label">Precio (Q):</label>
-      <input type="number" step="0.01" name="txt_precio" id="precio" class="form-control" value="<?= $perfume['precio'] ?>" required>
+      <label class="form-label">Precio (Q):</label>
+      <input type="number" step="0.01" name="txt_precio" class="form-control" required>
     </div>
 
     <div class="mb-3">
-      <label for="genero" class="form-label">Género:</label>
-      <select name="txt_id_genero" id="genero" class="form-select">
+      <label class="form-label">Género:</label>
+      <select name="txt_id_genero" class="form-select">
         <?php foreach ($generos as $gen): ?>
-          <option value="<?= $gen['id_genero'] ?>" <?= $perfume['id_genero'] == $gen['id_genero'] ? 'selected' : '' ?>>
-            <?= $gen['descripcion'] ?>
-          </option>
+          <option value="<?= $gen['id_genero'] ?>"><?= $gen['descripcion'] ?></option>
         <?php endforeach; ?>
       </select>
     </div>
 
     <div class="d-flex justify-content-center gap-3 mt-4">
-      <button type="submit" class="btn btn-guardar">💾 Actualizar</button>
+      <button type="submit" class="btn btn-guardar">💾 Guardar</button>
       <a href="<?= base_url('perfumes') ?>" class="btn btn-cancelar">↩️ Cancelar</a>
     </div>
   </form>

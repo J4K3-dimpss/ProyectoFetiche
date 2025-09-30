@@ -22,13 +22,13 @@ class perfumesController extends BaseController {
     public function formularioNuevo() {
     $genero = new Generos();
     $datos['generos'] = $genero->findAll(); // Para llenar el select de género
-    return view('Formulario_perfume', $datos);
+    return view('Formulario_nuevo_perfume', $datos);
 }
 
 
     // Guardar nuevo perfume
     public function guardarPerfume() {
-        $id = $this->request->getVar('txt_id');
+
         $nombre = $this->request->getVar('txt_nombre');
         $id_genero = $this->request->getVar('txt_id_genero');
         $marca = $this->request->getVar('txt_marca');
@@ -37,7 +37,7 @@ class perfumesController extends BaseController {
 
         $perfume = new Perfumes();
         $datos = [
-            'id_perfume' => $id,
+
             'nombre' => $nombre,
             'id_genero' => $id_genero,
             'marca' => $marca,
@@ -52,19 +52,19 @@ class perfumesController extends BaseController {
     public function eliminarPerfume($id = null) {
         $perfume = new Perfumes();
         $perfume->delete($id);
-        return $this->verPerfumes();
+        return redirect()->to('perfumes')->with('mensaje', 'Perfume eliminado correctamente');
     }
 
     // Localizar perfume para editar
     public function localizarPerfume($id = null) {
-        $perfume = new Perfumes();
-        $datosPerfume['datosPerfume'] = $perfume->where('id_perfume', $id)->first();
+    $modelo = new Perfumes();
+    $datos['perfume'] = $modelo->where('id_perfume', $id)->first();
 
-        // Cargar géneros para el <select>
-        $genero = new Generos();
-        $datosPerfume['generos'] = $genero->findAll();
+    $genero = new Generos();
+    $datos['generos'] = $genero->findAll();
 
-        return view('frm_actualizarPerfume', $datosPerfume);
+    return view('Formulario_perfume', $datos);
+
     }
 
     // Modificar perfume
@@ -87,4 +87,18 @@ class perfumesController extends BaseController {
         $perfume->update($id, $datos);
         return $this->verPerfumes();
     }
+    public function buscarPerfume() {
+    $query = $this->request->getGet('query');
+
+    $modelo = new Perfumes();
+    $datos['perfumes'] = $modelo
+        ->like('nombre', $query)
+        ->orLike('marca', $query)
+        ->findAll();
+
+    $genero = new Generos();
+    $datos['generos'] = $genero->findAll();
+
+    return view('Registro_de_perfumes', $datos);
+}
 }

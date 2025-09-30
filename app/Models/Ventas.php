@@ -7,4 +7,4 @@ use CodeIgniter\Model;
         protected $primaryKey = 'id_venta';
         protected $allowedFields = ['id_venta','id_cliente','fecha_venta' ];
     }
-?>v
+?>

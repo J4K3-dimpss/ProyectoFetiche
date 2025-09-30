@@ -8,7 +8,7 @@
 <body>
     <!-- Barra horizontal roja -->
 <div style="background-color: crimson; height: 80px; width: 120%;  display: flex; align-items: center; padding-left: 1rem;">
-  <span style="color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;">Bienvenido a Registro Usuarios</span>
+  <span style="color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;">Bienvenido a Historial de ordenes</span>
 </div>
 
 <!-- Contenedor principal que alinea menú y contenido -->
@@ -32,21 +32,12 @@
         <li><a href="index.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">✏️ Creación</a></li>
         <li><a href="<?= base_url('usuarios') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">👥 Usuarios</a></li>
         <li><a href="<?= base_url('ventas') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">🛍 Ordenes</a></li>
-        <li><a href="<?= base_url('genero') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📑 Categoría</a></li>
+        <li><a href="<?= base_url('generos') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📑 Categoría</a></li>
       </ul>
     </nav>
   </div>
 <div class="container mt-4">
-    <h2 class="mb-4">Usuarios registrados</h2>
-
-           <!-- 🔘 Botón arriba del buscador -->
-    <div class="d-flex justify-content-end mb-3">
-        <a href="#" class="btn btn-success btn-sm">
-            + Agregar nuevo usuario
-        </a>
-    </div>
-<div class="container mt-4">
-    <h2 class="mb-4">Ventas registradas</h2>
+    <h2 class="mb-4">Historial de ordenes</h2>
 
     <?php if (!empty($ventas)): ?>
         <table class="table table-bordered table-striped">
