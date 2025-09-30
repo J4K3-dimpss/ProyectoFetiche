@@ -110,3 +110,33 @@ in SYSTEMPATH\Router\Router.php on line 741.
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-29 15:59:59 --> ErrorException: Undefined variable $p
+[Method: GET, Route: generos]
+in APPPATH\Views\Registro_de_generos.php on line 59.
+ 1 APPPATH\Views\Registro_de_generos.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\Registro_de_generos.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\Registro_de_generos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Registro_de_generos', [], true)
+ 5 APPPATH\Controllers\generoController.php(13): view('Registro_de_generos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\generoController->verGeneros()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\generoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-09-29 16:00:33 --> ErrorException: Undefined variable $p
+[Method: GET, Route: usuarios]
+in APPPATH\Views\Registro_de_usuarios.php on line 69.
+ 1 APPPATH\Views\Registro_de_usuarios.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\Registro_de_usuarios.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\Registro_de_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Registro_de_usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(13): view('Registro_de_usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\usuariosController->verUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')

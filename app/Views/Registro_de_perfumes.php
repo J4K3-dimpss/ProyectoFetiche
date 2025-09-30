@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+<img src="<?= base_url('img/fetichelogo.png') ?>" width="300" height="auto">
 <!-- Barra horizontal roja -->
 <div style="background-color: crimson; height: 80px; width: 120%;  display: flex; align-items: center; padding-left: 1rem;">
   <span style="color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;">Bienvenido a Registro Perfumes</span>
@@ -29,11 +29,11 @@
     <nav>
       <ul style="list-style: none; padding: 0;">
         <li><a href="#" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">🏠 Inicio</a></li>
-        <li><a href="inventario.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📃 Inventario</a></li>
+        <li><a href="<?= base_url('perfumes') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📃 Inventario</a></li>
         <li><a href="index.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">✏️ Creación</a></li>
-        <li><a href="Registro de usuarios.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">👥 Usuarios</a></li>
-        <li><a href="historial_de_compras.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">🛍 Ordenes</a></li>
-        <li><a href="categorias.html" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📑 Categoría</a></li>
+        <li><a href="<?= base_url('usuarios') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">👥 Usuarios</a></li>
+        <li><a href="<?= base_url('ventas') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">🛍 Ordenes</a></li>
+        <li><a href="<?= base_url('genero') ?>" style="color: white; text-decoration: none; display: block; padding: 0.75rem; font-family: 'Montserrat', sans-serif;font-weight: bold;">📑 Categoría</a></li>
       </ul>
     </nav>
   </div>
@@ -64,6 +64,7 @@
                 <th>Marca</th>
                 <th>Descripción</th>
                 <th>Precio</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -84,6 +85,24 @@
                     <td><?= $p['marca'] ?></td>
                     <td><?= $p['descripcion'] ?></td>
                     <td>Q<?= number_format($p['precio'], 2) ?></td>
+                    <!-- ✅ Botones de acción -->
+        <td class="text-center">
+            <!-- Botón Actualizar -->
+            <a href="<?= base_url('perfumes/editar/' . $p['id_perfume']) ?>"
+               class="btn btn-sm"
+               style="background-color: #8B0000; color: white; border-radius: 0; padding: 6px 12px;">
+                ✏️
+            </a>
+
+            <!-- Botón Eliminar -->
+            <a href="<?= base_url('perfumes/eliminarPerfume/' . $p['id_perfume']) ?>"
+               class="btn btn-sm"
+               style="background-color: #ff69b4; color: white; border-radius: 0; padding: 6px 12px;"
+               onclick="return confirm('¿Estás segura de que quieres eliminar este perfume?')">
+                🗑️
+            </a>
+        </td>
+
                 </tr>
             <?php endforeach; ?>
         </tbody>

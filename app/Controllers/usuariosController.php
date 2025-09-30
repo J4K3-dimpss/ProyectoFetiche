@@ -42,7 +42,7 @@ class usuariosController extends BaseController {
     public function localizarUsuario($id = null) {
         $usuario = new Usuarios();
         $datosUsuario['datosUsuario'] = $usuario->where('id_usuario', $id)->first();
-        return view('frm_actualizarUsuario', $datosUsuario);
+        return view('Formulario_editar_usuario', $datosUsuario);
     }
 
     // Modificar usuario
