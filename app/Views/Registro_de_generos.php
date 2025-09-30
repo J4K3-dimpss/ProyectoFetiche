@@ -5,6 +5,26 @@
     <title>Géneros registrados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<?php if(session('mensaje')): ?>
+  <div class="alert alert-success text-center">
+    <?= session('mensaje') ?>
+  </div>
+<?php endif; ?>
+
+<body>
+<img src="<?= base_url('img/fetichelogo.png') ?>" width="150" height="auto"><a href="<?= base_url('logout') ?>" class="btn btn-primary"
+  style="
+    background-color: black;
+    color: white;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .8rem;
+    --bs-btn-font-size: .75rem;
+    position: relative;
+    left: 1230px;
+    top: 1px;
+  ">
+  Cerrar sesión
+</a>
 <body>
 
 <!-- Barra horizontal roja -->
@@ -57,7 +77,7 @@
                         <!-- ✅ Botones de acción -->
         <td class="text-center">
             <!-- Botón Actualizar -->
-            <a href="<?= base_url('genero/editar/' . $g['id_genero']) ?>"
+            <a href="<?= base_url('genero/localizar/' . $g['id_genero']) ?>"
                class="btn btn-sm"
                style="background-color: #8B0000; color: white; border-radius: 0; padding: 6px 12px;">
                 ✏️
