@@ -76,3 +76,4 @@ $routes->get('versacecarru', fn() => view('versacecarru'));
 $routes->get('YvesSaint', fn() => view('YvesSaint'));
 $routes->get('HgbossNight', fn() => view('HgbossNight'));
 $routes->get('Versaceenergycarru', fn() => view('Versaceenergycarru'));
+$routes->get('creditos', fn() => view('creditos'));

@@ -135,42 +135,42 @@
  
     <!-- Fila 1 -->
 <div class="fila-catalogo">
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Sauvagecarrusel.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Sauvagecarrusel') ?>'">
     <img src="<?= base_url('img/Sauvage.png') ?>" alt="Sauvage">
     <h3>Sauvage Eau De Parfum</h3>
     <p>DIOR</p>
     <p>Q 1,599.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Pololbelcarrusel.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Pololbelcarrusel') ?>'">
     <img src="<?= base_url('img/Polo lbel.png') ?>" alt="Polo Live L'bel">
     <h3>Polo Live L'bel</h3>
     <p>Polo</p>
     <p>Q 499.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Hollistercarrusel.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Hollistercarrusel') ?>'">
     <img src="<?= base_url('img/Hollister california.png') ?>" alt="Hollister California">
     <h3>Hollister California</h3>
     <p>Hollister</p>
     <p>Q 539.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Ralphlaurenpolo.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Ralphlaurenpolo') ?>'">
     <img src="<?= base_url('img/ralph lauren polo back.png') ?>" alt="Ralph Lauren Polo Black">
     <h3>Ralph Lauren Polo Black</h3>
     <p>Ralph Lauren</p>
     <p>Q 999.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Ckbe.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Ckbe') ?>'">
     <img src="<?= base_url('img/Ck be.png') ?>" alt="Ck Be">
     <h3>Ck Be</h3>
     <p>Calvin Klein</p>
     <p>Q 625.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('LouisVcarru.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('LouisVcarru') ?>'">
     <img src="<?= base_url('img/Lv nuit.png') ?>" alt="Louis Vuitton Nuit De Feu">
     <h3>Louis Vuitton Nuit De Feu</h3>
     <p>LOUIS VUITTON</p>
@@ -180,42 +180,42 @@
 
 <!-- Fila 2 -->
 <div class="fila-catalogo">
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Hgbossunlimited.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Hgbossunlimited') ?>'">
     <img src="<?= base_url('img/Hg boss bottled night .png') ?>" alt="Hugo Boss Bottled Night">
     <h3>Hugo Boss Bottled Night</h3>
     <p>Hugo Boss</p>
     <p>Q 899.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Hgbosssport.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Hgbosssport') ?>'">
     <img src="<?= base_url('img/Hg boss sport.png') ?>" alt="Hugo Boss Sport">
     <h3>Hugo Boss Sport</h3>
     <p>Hugo Boss</p>
     <p>Q 749.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('versacecarru.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('versacecarru') ?>'">
     <img src="<?= base_url('img/Versace eros.png') ?>" alt="Versace Eros Eau Parfum">
     <h3>Versace Eros Eau Parfum</h3>
     <p>Versace</p>
     <p>Q 1,399.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('YvesSaint.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('YvesSaint') ?>'">
     <img src="<?= base_url('img/yls saint laurent.webp') ?>" alt="Yves Saint Laurent Eau Parfum">
     <h3>Yves Saint Laurent Eau Parfum</h3>
     <p>Yves Saint Laurent</p>
     <p>Q 1,699.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('HgbossNight.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('HgbossNight') ?>'">
     <img src="<?= base_url('img/Hg boss unlimited.jpg') ?>" alt="Hugo Boss Unlimited">
     <h3>Hugo Boss Unlimited</h3>
     <p>Hugo Boss</p>
     <p>Q 1,099.00</p>
   </button>
 
-  <button class="producto-btn" onclick="window.location.href='<?= base_url('Versaceenergycarru.html') ?>'">
+  <button class="producto-btn" onclick="window.location.href='<?= base_url('Versaceenergycarru') ?>'">
     <img src="<?= base_url('img/versace eros energy.avif') ?>" alt="Versace Eros Energy">
     <h3>Versace Eros Energy</h3>
     <p>Versace</p>

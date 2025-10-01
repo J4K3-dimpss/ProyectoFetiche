@@ -137,16 +137,17 @@
   </header>
 
   <!-- Categorías como botones -->
-  <section class="categorias">
-    <button class="categoria-btn">
-      <img src="img/FEM1.png" alt="Perfume Femenino">
-      <li><a href="catalogo.html">Perfumes Femeninos</a></li>
-    </button>
-    <button class="categoria-btn">
-      <img src="img/MAN1.png" alt="Perfume Masculino">
-      <li><a href="index2.html">Perfumes Masculinos</a></li>
-    </button>
-  </section>
+<section class="categorias">
+  <button class="categoria-btn" onclick="window.location.href='<?= base_url('catalogo') ?>'">
+    <img src="<?= base_url('img/FEM1.png') ?>" alt="Perfume Femenino">
+    <h3>Perfumes Femeninos</h3>
+  </button>
+
+  <button class="categoria-btn" onclick="window.location.href='<?= base_url('index2') ?>'">
+    <img src="<?= base_url('img/MAN1.png') ?>" alt="Perfume Masculino">
+    <h3>Perfumes Masculinos</h3>
+  </button>
+</section>
 
   <!-- Más popular con carrusel -->
   <section class="mas-popular py-5 bg-light">
