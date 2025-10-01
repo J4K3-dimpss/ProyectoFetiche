@@ -5,3 +5,118 @@ DEBUG - 2025-10-01 00:58:52 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-01 00:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-01 00:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-01 00:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 01:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 01:38:12 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: 212forher]
+in APPPATH\Views\212forher.php on line 201.
+ 1 APPPATH\Views\212forher.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php', 201)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('212forher', [], true)
+ 5 APPPATH\Config\Routes.php(56): view('212forher')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-10-01 02:26:10 --> ErrorException: Undefined variable $perfume
+[Method: GET, Route: 212forher]
+in APPPATH\Views\212forher.php on line 201.
+ 1 APPPATH\Views\212forher.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perfume', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php', 201)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('212forher', [], true)
+ 5 APPPATH\Config\Routes.php(56): view('212forher')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-10-01 02:51:47 --> ErrorException: Undefined variable $perfume
+[Method: GET, Route: 212forher]
+in APPPATH\Views\212forher.php on line 201.
+ 1 APPPATH\Views\212forher.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perfume', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php', 201)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('212forher', [], true)
+ 5 APPPATH\Config\Routes.php(57): view('212forher')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-10-01 02:51:48 --> ErrorException: Undefined variable $perfume
+[Method: GET, Route: 212forher]
+in APPPATH\Views\212forher.php on line 201.
+ 1 APPPATH\Views\212forher.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perfume', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php', 201)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('212forher', [], true)
+ 5 APPPATH\Config\Routes.php(57): view('212forher')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-10-01 02:51:51 --> ErrorException: Undefined variable $perfume
+[Method: GET, Route: 212forher]
+in APPPATH\Views\212forher.php on line 201.
+ 1 APPPATH\Views\212forher.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perfume', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php', 201)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('212forher', [], true)
+ 5 APPPATH\Config\Routes.php(57): view('212forher')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+CRITICAL - 2025-10-01 02:53:02 --> ErrorException: Undefined variable $id_perfume
+[Method: GET, Route: 212forher]
+in APPPATH\Views\212forher.php on line 201.
+ 1 APPPATH\Views\212forher.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_perfume', 'C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php', 201)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\app\\Views\\212forher.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('212forher', [], true)
+ 5 APPPATH\Config\Routes.php(57): view('212forher')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\proyectovaleria\\FeticheProyecto\\public\\index.php')
+DEBUG - 2025-10-01 02:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 03:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -23,18 +23,9 @@
     <!-- Contenido de la navbar -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Enlaces -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="catalogo.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Categorías</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Iniciar sesión.html">Iniciar sesión</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Registrarse</a>
+          <a class="nav-link active" aria-current="page" href="<?= base_url('catalogo') ?>">Inicio</a>
         </li>
       </ul>
 

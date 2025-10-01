@@ -15,6 +15,7 @@ $routes->get('generos', 'generoController::verGeneros');
 $routes->get('clientes', 'clientesController::verClientes');
 $routes->get('usuarios', 'usuariosController::verUsuarios');
 $routes->get('ventas', 'ventasController::verVentas');
+$routes->get('perfumeww', 'ventasController::mostrarPerfumes');
 
 $routes->get('perfumes/nuevo', 'perfumesController::formularioNuevo');
 $routes->get('perfumes/buscar', 'perfumesController::buscarPerfume');

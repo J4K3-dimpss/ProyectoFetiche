@@ -18,6 +18,8 @@ class ventasController extends BaseController {
 
         return view('Registro_de_ventas', $datosBD);
     }
+    
+
 
     // Guardar nueva venta
     public function guardarVenta() {
@@ -84,4 +86,46 @@ public function localizarVenta($id = null) {
 
     return view('Registro_de_ventas', $datosBD);
 }
+public function agregar() {
+    $id_perfume = $this->request->getPost('perfume_id');
+    $session = session();
+
+    $carrito = $session->get('carrito') ?? [];
+    $carrito[] = $id_perfume;
+    $session->set('carrito', $carrito);
+
+    return redirect()->back()->with('mensaje', 'Perfume agregado a la compra');
+}
+
+public function finalizar() {
+    $session = session();
+    $carrito = $session->get('carrito') ?? [];
+    $id_cliente = $this->request->getPost('id_cliente');
+
+    if (empty($carrito)) {
+        return redirect()->back()->with('error', 'No hay perfumes en la compra');
+    }
+
+    $venta = new Ventas();
+    $datosVenta = [
+        'id_cliente' => $id_cliente,
+        'fecha_venta' => date('Y-m-d')
+    ];
+    $venta->insert($datosVenta);
+    $id_venta = $venta->getInsertID();
+
+    $detalleModel = new \App\Models\DetalleVenta();
+    foreach ($carrito as $id_perfume) {
+        $detalleModel->insert([
+            'id_venta' => $id_venta,
+            'id_perfume' => $id_perfume,
+            'cantidad' => 1
+        ]);
+    }
+
+    $session->remove('carrito');
+
+    return redirect()->to(base_url('ventas'))->with('mensaje', 'Compra registrada exitosamente');
+}
+
 }
