@@ -46,6 +46,7 @@
                 <option value="">Selecciona un rol</option>
                 <option value="admin">Administrador</option>
                 <option value="vendedor">Vendedor</option>
+                <option value="vendedor">Cliente</option>
             </select>
         </div>
 

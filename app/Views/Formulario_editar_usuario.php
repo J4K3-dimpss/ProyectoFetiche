@@ -56,6 +56,7 @@
             <select name="txt_rol" class="form-select" required>
                 <option value="admin" <?= $datosUsuario['rol'] === 'admin' ? 'selected' : '' ?>>Administrador</option>
                 <option value="vendedor" <?= $datosUsuario['rol'] === 'vendedor' ? 'selected' : '' ?>>Vendedor</option>
+                <option value="cliente" <?= $datosUsuario['rol'] === 'cliente' ? 'selected' : '' ?>>Cliente</option>
             </select>
         </div>
 

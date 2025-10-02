@@ -196,8 +196,8 @@
       </div>
  
       <div class="actions">
-        <button>Agregar a la compra</button>
-        <button>Finalizar compra</button>
+        <button onclick="agregarAlCarrito()">Agregar a la compra</button>
+        <button onclick="mostrarFactura()">Finalizar compra</button>
       </div>
     </div>
  
@@ -214,7 +214,16 @@
     </div>
   </div>
  
-  <script>
+  <!-- Modal de Factura -->
+<div id="facturaModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:#fff; padding:30px; border-radius:10px; max-width:400px; margin:auto; position:relative;">
+    <h2>Factura</h2>
+    <div id="facturaContenido"></div>
+    <button onclick="cerrarFactura()" style="margin-top:20px;">Cerrar</button>
+  </div>
+</div>
+
+<script>
     let currentIndex = 0;
  
     function showSlide(index) {
@@ -236,7 +245,54 @@
     function prevSlide() {
       showSlide(currentIndex - 1);
     }
-  </script>
+
+  // Carrito de compras
+  function agregarAlCarrito() {
+    const producto = {
+      nombre: "Louis Vuitton Nuit de Feu",
+      descripcion: "La intensidad como esencia. El misterio hecho aroma.",
+      cantidad: 1,
+      precio: 3349.00,
+      tienda: "23 calle 10-30 zona 4 de Mixco, Ciudad de Guatemala 01057, Guatemala",
+      categoria: "Masculino"
+    };
+    localStorage.setItem('carrito', JSON.stringify([producto]));
+    alert('Producto agregado al carrito.');
+  }
+
+  function mostrarFactura() {
+    const carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+    if (carrito.length === 0) {
+      alert('El carrito está vacío.');
+      return;
+    }
+    let total = 0;
+    let html = '<table style="width:100%; border-collapse:collapse;">';
+    html += '<tr><th style="text-align:left;">Producto</th><th>Cantidad</th><th>Precio</th></tr>';
+    carrito.forEach(item => {
+      html += `<tr>
+        <td>${item.nombre}</td>
+        <td style="text-align:center;">${item.cantidad}</td>
+        <td style="text-align:right;">Q ${item.precio.toFixed(2)}</td>
+      </tr>`;
+      total += item.precio * item.cantidad;
+    });
+    html += `<tr>
+      <td colspan="2" style="text-align:right;"><strong>Total:</strong></td>
+      <td style="text-align:right;"><strong>Q ${total.toFixed(2)}</strong></td>
+    </tr>`;
+    html += '</table>';
+    html += `<p><strong>Tienda:</strong> ${carrito[0].tienda}</p>`;
+    html += `<p><strong>Categoría:</strong> ${carrito[0].categoria}</p>`;
+    document.getElementById('facturaContenido').innerHTML = html;
+    document.getElementById('facturaModal').style.display = 'flex';
+    localStorage.removeItem('carrito');
+  }
+
+  function cerrarFactura() {
+    document.getElementById('facturaModal').style.display = 'none';
+  }
+</script>
 </body>
 </html>
  
