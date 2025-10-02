@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\VendedorController;
 use App\Models\Clientes;
 use CodeIgniter\Router\RouteCollection;
 
@@ -78,3 +79,23 @@ $routes->get('YvesSaint', fn() => view('YvesSaint'));
 $routes->get('HgbossNight', fn() => view('HgbossNight'));
 $routes->get('Versaceenergycarru', fn() => view('Versaceenergycarru'));
 $routes->get('creditos', fn() => view('creditos'));
+
+
+$routes->get('admin/inicio', 'AdminController::inicio');
+$routes->get('admin/perfumes', 'AdminController::perfumes');
+$routes->get('admin/clientes', 'AdminController::clientes');
+$routes->get('admin/generos', 'AdminController::generos');
+$routes->get('admin/usuarios', 'AdminController::usuarios');
+$routes->get('admin/ventas', 'AdminController::ventas');
+
+$routes->get('vendedor/ventas', 'VendedorController::ventas');
+$routes->get('vendedor/perfumes', 'VendedorController::mostrarPerfumes');
+$routes->get('vendedor/clientes', 'VendedorController::clientes');
+$routes->get('vendedor/generos', 'VendedorController::generos');
+$routes->get('vendedor/inicio', 'VendedorController::inicio');
+$routes->get('vendedor/usuarios', 'VendedorController::usuarios');
+
+
+$routes->get('cliente/inicio', 'ClientessController::inicio');
+$routes->get('cliente/catalogo-mujer', 'ClientessController::catalogoMujer');
+$routes->get('cliente/catalogo-hombre', 'ClientessController::catalogoHombre');

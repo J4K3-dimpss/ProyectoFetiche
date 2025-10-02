@@ -11,23 +11,34 @@ class LoginController extends BaseController
     }
 
     public function verificar()
-    {
-        $correo = $this->request->getPost('nombre_usuario');
-        $password = $this->request->getPost('contraseña');
+{
+    $correo = $this->request->getPost('nombre_usuario');
+    $password = $this->request->getPost('contraseña');
 
-        $usuarioModel = new UsuarioModel();
-        $usuario = $usuarioModel->where('nombre_usuario', $correo)->first();
+    $usuarioModel = new UsuarioModel();
+    $usuario = $usuarioModel->where('nombre_usuario', $correo)->first();
 
-if ($usuario && $usuario['contraseña'] === $password) {
-    session()->set([
-        'usuario' => $usuario['nombre_usuario'],
-        'rol' => $usuario['rol']
-    ]);
-    return redirect()->to('perfumes');
-} else {
-    return redirect()->to('login')->with('mensaje', 'Credenciales incorrectas');
-}
+    if ($usuario && $usuario['contraseña'] === $password) {
+        session()->set([
+            'usuario' => $usuario['nombre_usuario'],
+            'rol' => $usuario['rol']
+        ]);
+
+        // Redirigir según el rol
+        switch ($usuario['rol']) {
+            case 'admin':
+                return redirect()->to('admin/inicio'); // créditos.php
+            case 'vendedor':
+                return redirect()->to('vendedor/ventas'); // Registro_de_ventas.php
+            case 'cliente':
+                return redirect()->to('cliente/inicio'); // inicio.php
+            default:
+                return redirect()->to('login')->with('mensaje', 'Rol no reconocido');
+        }
+    } else {
+        return redirect()->to('login')->with('mensaje', 'Credenciales incorrectas');
     }
+}
 public function logout()
 {
     session()->destroy();

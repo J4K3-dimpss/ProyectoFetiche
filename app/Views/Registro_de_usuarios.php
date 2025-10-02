@@ -77,6 +77,9 @@
                         <td><?= $u['nombre_usuario'] ?></td>
                         <td><?= ucfirst($u['rol']) ?></td>
                          <!-- ✅ Botones de acción -->
+                          <?php if (session('rol') === 'admin'): ?>
+    <!-- Botones aquí -->
+
         <td class="text-center">
             <!-- Botón Actualizar -->
             <a href="<?= base_url('usuarios/editar/' . $u['id_usuario']) ?>"
@@ -92,7 +95,7 @@
                onclick="return confirm('¿Estás segura de que quieres eliminar este usuario?')">
                 🗑️
             </a>
-        </td>
+        </td><?php endif; ?>
 
                         
                     </tr>

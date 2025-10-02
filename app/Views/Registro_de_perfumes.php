@@ -109,6 +109,9 @@
                     <td><?= $p['descripcion'] ?></td>
                     <td>Q<?= number_format($p['precio'], 2) ?></td>
                     <!-- ✅ Botones de acción -->
+                     <?php if (session('rol') === 'admin'): ?>
+    <!-- Botones aquí -->
+
         <td class="text-center">
             <!-- Botón Actualizar -->
             <a href="<?= base_url('perfumes/editar/' . $p['id_perfume']) ?>"
@@ -124,7 +127,7 @@
                onclick="return confirm('¿Estás segura de que quieres eliminar este perfume?')">
                 🗑️
             </a>
-        </td>
+        </td><?php endif; ?>
 
                 </tr>
             <?php endforeach; ?>

@@ -85,6 +85,9 @@
                         </td>
                         <td><?= $v['fecha_venta'] ?></td>
                         <!-- ✅ Botones de acción -->
+                         <?php if (session('rol') === 'admin'): ?>
+    <!-- Botones aquí -->
+
         <td class="text-center">
             <!-- Botón Actualizar -->
             <a href="<?= base_url('ventas/editar/' . $v['id_venta']) ?>"
@@ -100,7 +103,7 @@
                onclick="return confirm('¿Estás segura de que quieres eliminar esta venta?')">
                 🗑️
             </a>
-        </td>
+        </td><?php endif; ?>
 
                     </tr>
                 <?php endforeach; ?>

@@ -59,6 +59,10 @@
                         <td><?= $c['correo'] ?></td>
                         <td><?= $c['telefono'] ?></td>
                         <!-- ✅ Botones de acción -->
+                         <?php if (session('rol') === 'admin'): ?>
+    <!-- Botones aquí -->
+
+                         
         <td class="text-center">
             <!-- Botón Actualizar -->
             <a href="<?= base_url('clientes/editar/' . $c['id_cliente']) ?>"
@@ -75,6 +79,7 @@
                 🗑️
             </a>
         </td>
+        <?php endif; ?>
 
                     </tr>
                 <?php endforeach; ?>

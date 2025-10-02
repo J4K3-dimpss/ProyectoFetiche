@@ -73,6 +73,10 @@
                         <td><?= $g['descripcion'] ?></td>
                         <!-- ✅ Botones de acción -->
         <td class="text-center">
+          <?php if (session('rol') === 'admin'): ?>
+    <!-- Botones aquí -->
+
+
             <!-- Botón Actualizar -->
             <a href="<?= base_url('genero/localizar/' . $g['id_genero']) ?>"
                class="btn btn-sm"
@@ -88,6 +92,7 @@
                 🗑️
             </a>
         </td>
+        <?php endif; ?>
 
                         
                     </tr>

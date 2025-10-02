@@ -54,6 +54,7 @@
           <input type="password" name="contraseña" class="form-control" placeholder="Ingresa tu contraseña" required>
         </div>
 
+
         <div class="d-flex justify-content-center gap-3 mt-4">
           <button type="submit" class="btn btn-primary btn-lg">Iniciar sesión</button>
           <a href="<?= base_url('/') ?>" class="btn btn-secondary btn-lg">Cerrar</a>

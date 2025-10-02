@@ -11,7 +11,20 @@
   <div class="container-fluid">
     <!-- Logo en la izquierda -->
     <a class="navbar-brand" href="#">
-      <img src="img/fetichelogo.png" alt="Fetiche Logo" width="40" height="40" class="d-inline-block align-text-top">
+      <img src="img/fetichelogo.png" alt="Fetiche Logo" width="40" height="40" class="d-inline-block align-text-top"><a href="<?= base_url('logout') ?>" class="btn btn-primary"
+  style="
+    background-color: black;
+    color: white;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .8rem;
+    --bs-btn-font-size: .75rem;
+    position: relative;
+    left: 1230px;
+    top: 1px;
+  ">
+  Cerrar sesión
+</a>
+</button>
     </a>
 
     <!-- Botón para vista móvil -->
@@ -24,16 +37,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Enlaces -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?= base_url('creditos') ?>">Inicio</a>
-        </li>
-      </ul>
+  <?php if (session('rol') !== 'cliente'): ?>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="<?= base_url('creditos') ?>">Inicio</a>
+    </li>
+  <?php endif; ?>
+</ul>
 
-      <!-- Buscador -->
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+     
     </div>
   </div>
 </nav>
